@@ -25,6 +25,16 @@ public class Occurrence implements Comparable<Occurrence>{
     this.lastOccurrence = lastOccurrence;
   }
 
+  /**
+   * The overridden method gives a higher precedence for {@link Occurrence} with higher number of
+   * occurrence or later occurrence if number of occurrences are equal.
+   *
+   * @param occurrence {@link Occurrence}
+   * @return a negative integer or a positive integer as number of occurrence of this object
+   *          is less than, or greater than the specified object's and IF THEY ARE EQUAL then
+   *          a negative integer or a positive integer as last occurrence of this object
+   *          is less than, or greater than the specified object's
+   */
   @Override
   public int compareTo(Occurrence occurrence) {
     if (occurrence.getNumOfOccurence() == this.getNumOfOccurence()) {
