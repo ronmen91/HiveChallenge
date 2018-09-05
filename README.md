@@ -61,5 +61,4 @@ with TimSort has O(n*log(n)).
 `mvn clean install`
 
 ### How to run
-`java -jar hiveChallenge-1.0.jar "<input-file-name>" "<output-file-name>"`
-
+`java -jar target/hiveChallenge-1.0.jar "<input-file-name>" "<output-file-name>"`
