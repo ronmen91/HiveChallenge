@@ -38,9 +38,9 @@ For each word these 3 attributes should be stored:
 - last occurrence 
 
 As the application processes the input file these attributes should be stored in a 
-data structure for every new word and if it was store then update the related 
+data structure for every new word and if it was stored then update the related 
 attributes. \
-For adding and searching with O(1) time complexity I choose `Hashmap` with the word
+For adding and searching with O(1) time complexity I chose `Hashmap` with the word
 as `key` and `Occuerrence` object as a value which stores the number of occurrence 
 and the last occurrence. If every word is distinct the map will contains N entries
 so space complexity is O(N).
@@ -52,8 +52,8 @@ This means that if a word occurred more times then it has a higher priority and 
 two or more words have the same number of occurrence than the word has the later
 occurrence has a higher priority. \
 To met with this requirement a filter should be done on the stored words and 
-`Occurrence` objects should me comparable and override the `compareTo` method with
-taking the number of occurrence and their last occurrence into account.
+`Occurrence` objects should be comparable by overriding the `compareTo` method and
+taking the number of occurrence and the last occurrence into account.
 The filtering go through the all words so it has O(N) time complexity and sorting 
 with TimSort has O(n*log(n)).
 
