@@ -38,8 +38,8 @@ public class Occurrence implements Comparable<Occurrence>{
   @Override
   public int compareTo(Occurrence occurrence) {
     if (occurrence.getNumOfOccurence() == this.getNumOfOccurence()) {
-      return this.getLastOccurrence() - occurrence.getLastOccurrence();
+      return  occurrence.getLastOccurrence() - this.getLastOccurrence();
     }
-    return this.getNumOfOccurence() - occurrence.getLastOccurrence();
+    return occurrence.getNumOfOccurence() - this.getNumOfOccurence();
   }
 }
