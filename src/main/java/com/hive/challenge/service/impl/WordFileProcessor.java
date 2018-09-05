@@ -70,7 +70,8 @@ public class WordFileProcessor implements FileProcessor<Map<String, Occurrence>>
     try (BufferedWriter writer = Files.newBufferedWriter(outputFilePath))
     {
       for(String word: outputWords) {
-        writer.write(word + "\n");
+        writer.write(word);
+        writer.newLine();
       }
     } catch (IOException e) {
       logger.error(OUTPUT_FILE_ERROR);
