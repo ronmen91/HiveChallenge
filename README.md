@@ -26,6 +26,7 @@ Command line arguments:
 Input file: 
  - it's a valid input file what means that the file may contain no word as well
  but if does then every word is followed by new a new line
+ - the words are case sensitive therefore e.g.: `hello` and `Hello` are different word
  
 Output file:
  - it has the same format as the input file
